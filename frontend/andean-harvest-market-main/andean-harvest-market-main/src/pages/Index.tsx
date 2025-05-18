@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import ProductGrid from "@/components/ProductGrid";
 import { products } from "@/data/products";
 import { useShoppingCart } from "@/components/ShoppingCart";
+import ChatBot from "@/components/ChatBot";
 
 const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -151,6 +152,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Chat Bot */}
+      <ChatBot />
     </div>
   );
 };
